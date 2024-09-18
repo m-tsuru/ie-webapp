@@ -1,4 +1,5 @@
 import { type Provider } from "@supabase/supabase-js";
+import { getURL } from "../helper";
 import { createClient } from "../supabase/client";
 
 export async function signInWithOAuth(provider: Provider, redirectUrl: String) {
@@ -6,8 +7,7 @@ export async function signInWithOAuth(provider: Provider, redirectUrl: String) {
   await supabase.auth.signInWithOAuth({
     provider: provider,
     options: {
-      // redirectTo: getURL(`/auth/callback?next=/${redirectUrl}`),
-      redirectTo: `https://ie-webapp.vercel.app/auth/callback?next=/${redirectUrl}`,
+      redirectTo: getURL(`/auth/callback?next=/${redirectUrl}`),
     },
   });
 }
