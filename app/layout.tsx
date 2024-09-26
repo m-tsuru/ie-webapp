@@ -1,5 +1,5 @@
-import DesktopNav from "@/components/DesktopNav";
-import Header from "@/components/Header";
+import DesktopNav from "@/components/Navigations/DesktopNav";
+import Header from "@/components/Navigations/Header";
 import { theme } from "@/theme";
 import { Center, UIProvider, VStack } from "@yamada-ui/react";
 import type { Metadata } from "next";
