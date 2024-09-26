@@ -7,7 +7,7 @@ import {
   HStack,
   Spacer,
 } from "@yamada-ui/react";
-import User from "./User";
+import User from "../Authentications/User";
 
 const Header = () => {
   return (
