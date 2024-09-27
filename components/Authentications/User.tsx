@@ -36,6 +36,7 @@ const User: React.FC = async () => {
                 width="48px"
                 height="48px"
                 borderRadius="full"
+                alt=""
               />
             ) : (
               <Center

@@ -1,4 +1,4 @@
-import OAuthLoginButtons from "@/components/OAuthLoginButtons";
+import OAuthLoginButtons from "@/components/Authentications/OAuthLoginButtons";
 import {
   Card,
   CardBody,
